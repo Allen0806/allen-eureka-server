@@ -4,7 +4,7 @@ server:
 spring:  application:    name: allen-eureka-server
     
 eureka:
-  instance:    hostname: eureka2.server.com  client:    register-with-eureka: false #默认为true，单机模式下设置为false，仅作为服务中心，不作为服务客户端
+  instance:    hostname: eureka3.server.com  client:    register-with-eureka: false #默认为true，单机模式下设置为false，仅作为服务中心，不作为服务客户端
     fetch-registry: true #默认为true，单机模式下设置为false， 不从服务中心检索注册的服务
     service-url:
       defaultZone: http://eureka1.server.com:8701/eureka/,http://eureka2.server.com:8702/eureka/,http://eureka3.server.com:8703/eureka/
