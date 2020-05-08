@@ -16,12 +16,12 @@ eureka:
     lease-renewal-interval-in-seconds: 10  client:
     # Eureka Client 刷新本地缓存时间，默认30秒
     registry-fetch-interval-seconds: 5
-    # 表示是否将自己注册到Eureka Server，默认为true。单机模式下设置为false，仅作为服务中心，不作为服务客户端    register-with-eureka: false 
+    # 表示是否将自己注册到Eureka Server，默认为true。单机模式下设置为false，仅作为服务中心，不作为服务客户端    register-with-eureka: true 
     # 表示是否从Eureka Server获取注册信息，默认为true。单机模式下设置为false， 不从服务中心检索注册的服务
-    fetch-registry: false
+    fetch-registry: true
     # 表示客户端需要注册的 Eureka Server 的地址。
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://eureka2.server.com:8702/eureka/,http://eureka3.server.com:8703/eureka/
   server:
     # 是否开启readOnlyCacheMap(ConcurrentHashMap)
     use-read-only-response-cache: true
