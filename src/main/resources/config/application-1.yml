@@ -27,7 +27,7 @@ eureka:
     fetch-registry: true
     # 表示客户端需要注册的 Eureka Server 的地址。
     service-url:
-      defaultZone: http://eureka2.server.com:8702/eureka/,http://eureka3.server.com:8703/eureka/
+      defaultZone: http://allen:allen1234@eureka2.server.com:8702/eureka/,http://allen:allen1234@eureka3.server.com:8703/eureka/
   server:
     # 是否开启readOnlyCacheMap(ConcurrentHashMap)
     use-read-only-response-cache: true

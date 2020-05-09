@@ -23,7 +23,7 @@ eureka:
     fetch-registry: false
     # 表示客户端需要注册的 Eureka Server 的地址。
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://allen:allen1234@${eureka.instance.hostname}:${server.port}/eureka/
   server:
     # 是否开启readOnlyCacheMap(ConcurrentHashMap)
     use-read-only-response-cache: true
