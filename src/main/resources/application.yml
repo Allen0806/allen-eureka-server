@@ -2,6 +2,8 @@ server:
   port: 8701
 
 spring:  application:    name: allen-eureka-server
+  security:    user:      name: allen
+      password: allen1234
     
 eureka:
   instance:    hostname: eureka1.server.com
