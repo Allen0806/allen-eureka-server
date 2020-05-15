@@ -59,7 +59,7 @@ eureka:
     # 如果在 lease-expiration-duration-in-seconds 指定的时间内未收到心跳，则移除该实例。
     lease-renewal-interval-in-seconds: 10  client:
     # Eureka Client 刷新本地缓存时间，默认30秒
-    registry-fetch-interval-seconds: 5
+    registry-fetch-interval-seconds: 10
     # 表示是否将自己注册到Eureka Server，默认为true。单机模式下设置为false，仅作为服务中心，不作为服务客户端    register-with-eureka: false 
     # 表示是否从Eureka Server获取注册信息，默认为true。单机模式下设置为false， 不从服务中心检索注册的服务
     fetch-registry: false
@@ -76,7 +76,7 @@ eureka:
     # 默认为true，设置为false，关闭自我保护，开发环境设置为false
     enable-self-preservation: false
     # Eureka Server 在运行期间会去统计心跳失败比例在15分钟之内是否低于85%，#默认0.85
-    renewal-percent-threshold: 0.85
+    renewal-percent-threshold: 0.49
     
 logging:
   level:
