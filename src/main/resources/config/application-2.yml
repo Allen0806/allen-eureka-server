@@ -15,8 +15,6 @@ server:
     # tomcat最大连接数
     max-connections: 2000
     accept-count: 5000
-    # tomcat最大线程数
-    max-threads: 1000
     # 最大连接超时时间
     connection-timeout: 100
     accesslog:
@@ -41,7 +39,10 @@ server:
       request-attributes-enabled: false
       # 是否启用访问日志轮换
       rotate: true
-      
+    threads:
+      # tomcat最大线程数
+      max: 1000
+            
 spring:
   application:
     name: allen-eureka-server
